@@ -21,7 +21,7 @@ typescript -> javascript
 
 ### Q) 그럼 transpile 상황에 compile 한다는 것은 옳지 않은 것인가?
 [Source-to-source compiler](https://en.wikipedia.org/wiki/Source-to-source_compiler)
-transpiler는 source to source compiler 라고도 부르며, 컴파일러의 일종으로 트랜스파일러를 설명하고 있습니다. 따라서 compile은 transpile 보다 더 큰 범주에 속하게 되는 것입니다.
+transpiler는 source to source compiler 라고도 부르며, 컴파일러의 일종으로 하나의 프로그래밍 언어로 작성된 프로그램의 소스 코드를 입력으로 받아 다른 프로그래밍 언어로 동등한 소스 코드를 만들어내는 것입니다. 따라서 compile은 transpile 보다 더 큰 범주에 속하게 되는 것입니다.
 
 ### Q) typescript는 javascript로 컴파일한다고 표현하는데 틀린말인가?
 typescript는 javascript로 변환되는데, 컴파일링 된다고는 하지만 정확히 말하면 트랜스파일링 된다고 말할 수 있습니다. 하지만 위에서 보았듯이 컴파일한다는 말이 틀린말은 아닙니다.
