@@ -1,6 +1,6 @@
 # transpile vs compile
 
-프론트엔드 개발을 하다보면 자주 babel이나 typescript를 자주 언급하게 되는데 이들을 설명할때 compile 혹은 transplie이라는 용어를 종종 사용 하게 되는데 
+프론트엔드 개발을 하다보면 자주 babel이나 typescript를 자주 언급하게 되는데 이들을 설명할때 compile 혹은 transpile 이라는 용어를 종종 사용 하게 되는데 
 이 둘의 차이점을 정확하게 이해하고 올바른 용어를 사용할 수 있도록 되짚어 보도록 하겠습니다.
 
 ## compile
