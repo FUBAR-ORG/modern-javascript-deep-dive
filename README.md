@@ -60,3 +60,5 @@ ex) sungmin/브라우저 렌더링 과정
 25. browserRouter vs hashRouter
 26. 검색 키보드 이벤트(크롬 search)
 27. 웹 접근성
+28. 이미지 최적화 방법
+29. virtual scroll
