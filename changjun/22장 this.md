@@ -81,4 +81,18 @@ console.log(circle.radius); //5;
 
 ### 2-4 call, apply, bind 함수에 의한 바인딩
 
-ㄱㄷ
+```js
+var value = 1;
+const obj = {
+  value: 100,
+  foo() {
+    setTimeout(
+      function () {
+        console.log(this.value);
+      }.bind(this),
+      100
+    );
+  },
+};
+obj.foo(); //100
+```
