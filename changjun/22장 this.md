@@ -81,6 +81,8 @@ console.log(circle.radius); //5;
 
 ### 2-4 call, apply, bind 함수에 의한 바인딩
 
+#### bind함수
+
 ```js
 var value = 1;
 const obj = {
@@ -95,4 +97,20 @@ const obj = {
   },
 };
 obj.foo(); //100
+```
+
+### apply, call 함수
+
+```js
+let person1 = {
+  name: 'Jo',
+};
+let person2 = {
+  name: 'Kim',
+  study: function () {
+    console.log(this.name + '이/가 공부를 하고 있습니다.');
+  },
+};
+person2.study(); // Kim이/가 공부를 하고 있습니다.
+person2.study.call(person1); // Jo이/가 공부를 하고 있습니다.
 ```
