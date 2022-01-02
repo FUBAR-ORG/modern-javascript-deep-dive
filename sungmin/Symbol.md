@@ -16,7 +16,7 @@
     - 문자열 인수를 선택적으로 전달 할 수 있다. 
       - 전달한 문자열은 심벌 값에 대한 설명이며 디버깅 용도로 사용
       - 심벌 값 자체에는 영향을 주지 않음
-      - 같은 문자열은 인수로 전달해 생성한 심벌 값들이라도 각각 유일
+      - 같은 문자열을 인수로 전달해 생성한 심벌 값들이라도 각각 유일
     - 생성 시 인수로 전달한 설명은 description 프로퍼티로 참조 가능 
       - 다른 원시타입처럼 래퍼객체를 생성하여 Symbol.prototype의 프로퍼티를 참조한다.
          ```js
@@ -63,3 +63,21 @@
 - 자바스크립트에는 기본적으로 제공하는 빌트인 심벌 값이 있다.
 - Well-known Symbol은 자바스크립트 엔진의 내부 알고리즘에 사용된다.
 - 예를 들어 Symbol.iterator는 이터레이터를 반환하는 메서드의 키로 사용되는 심벌이다.
+- 순회 가능한 빌트인 이터러블은 Symbol.iterator를 키로 갖는 메서드를 가지며 이 메서드를 호출하면 이터레이터를 반환하도록 ECMAScript 사양에 규정되어 있다.
+
+```js
+const iterable = {
+   [Symbol.iterator](){
+    let cur = 1;
+    const max = 5;
+    return {
+       next(){
+          return {value: cur++, done: cur > max + 1};
+       }
+    }  
+   }
+}
+for(const num of iterable){
+   console.log(num); // 1 2 3 4 5
+}
+```
