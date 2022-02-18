@@ -373,3 +373,11 @@ regExp.test(target); // true
 ```js
 target.replace(/[^A-Za-z0-9]/gi, "");
 ```
+
+---
+
+## 참고
+
+- [정규 표현식 튜토리얼 예제를 통한 cheatsheet 번역](https://chrisjune-13837.medium.com/%EC%A0%95%EA%B7%9C%EC%8B%9D-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC-%EC%98%88%EC%A0%9C%EB%A5%BC-%ED%86%B5%ED%95%9C-cheatsheet-%EB%B2%88%EC%97%AD-61c3099cdca8)
+- [정규 표현식 검사 사이트](https://rubular.com/)
+- [`MS Docs` 정규 표현식 구문](<https://docs.microsoft.com/ko-kr/previous-versions/visualstudio/visual-studio-2010/ae5bf541(v=vs.100)?redirectedfrom=MSDN>)
